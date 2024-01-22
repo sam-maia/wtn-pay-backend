@@ -22,7 +22,7 @@ rotas.post('/addform', (req, res) => {
         moeda: req.body.moeda,
         pin: req.body.pin
     }).then(()=>{
-        res.redirect('https://wtnpay.onrender.com')
+        res.redirect('https://wtnpay.onrender.com/concluido')
     }).catch((erro)=>{
         res.send("Formulario não pode ser cadastrado! " + erro)
     })
