@@ -15,9 +15,6 @@ const Formulario = sequelize.define('formulario', {
     email: {
         type: Sequelize.STRING
     },
-    confirmEmail: {
-        type: Sequelize.STRING
-    },
     pais: {
         type: Sequelize.STRING
     },

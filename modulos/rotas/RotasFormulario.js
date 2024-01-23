@@ -17,7 +17,6 @@ rotas.post('/addform', (req, res) => {
         celular: req.body.celular,
         nome: req.body.nome,
         email: req.body.email,
-        confirmEmail: req.body.confirmEmail,
         pais: req.body.pais,
         moeda: req.body.moeda,
         pin: req.body.pin
