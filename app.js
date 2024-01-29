@@ -13,7 +13,7 @@ sequelize.authenticate().then(  () => {
 })
 
 app.use(cors({
-    origin: ['https://wtnpay.onrender.com', 'https://wtnpay.com', 'http://localhost:3000'],
+    origin: ['https://wtnpay.onrender.com', 'https://www.wtnpay.com', 'http://localhost:3000'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type']
 }))
