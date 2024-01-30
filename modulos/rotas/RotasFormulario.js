@@ -11,10 +11,9 @@ rotas.get('/', (req, res) => {
 })
 
 rotas.post('/addform', (req, res) => {
-
     Formulario.create({
         indicador: req.body.indicador,
-        celular: req.body.celular,
+        celular: req.body.indicado,
         nome: req.body.nome,
         email: req.body.email,
         pais: req.body.pais,
