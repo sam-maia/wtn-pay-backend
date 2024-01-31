@@ -21,6 +21,12 @@ app.use(cors({
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
+app.get('/', (req, res) => {
+    return (
+        res.send('Testinho')
+    )
+})
+
 app.use('/rotasForm', RotasFormulario)
 
 app.listen(process.env.PORT || 5000, () => {
