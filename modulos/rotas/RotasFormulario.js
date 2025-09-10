@@ -7,6 +7,9 @@ rotas.get('/', (req, res) => {
         return (
             res.json(formulario)
         )
+    }).catch((erro) => {
+        console.error('Erro ao buscar formulários:', erro)
+        res.status(500).send('Erro ao buscar formulários.')
     })
 })
 
